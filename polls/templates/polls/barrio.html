@@ -1,0 +1,9 @@
+{% if latest_barrio_list %}
+    <ul>
+    {% for barrio in latest_barrio_list %}
+        <li>{{ barrio.name_text }}</li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No hay barrios.</p>
+{% endif %}

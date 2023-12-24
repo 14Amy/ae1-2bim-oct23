@@ -1,0 +1,9 @@
+{% if latest_pais_list %}
+    <ul>
+    {% for pais in latest_pais_list %}
+    <li>{{ pais.name_text }}</li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No hay paises.</p>
+{% endif %}
